@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4B6F7DA18FEDECA000229F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7D918FEDECA000229F8 /* Foundation.framework */; };
+		F4B6F7DC18FEDECA000229F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7DB18FEDECA000229F8 /* CoreGraphics.framework */; };
+		F4B6F7DE18FEDECA000229F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7DD18FEDECA000229F8 /* UIKit.framework */; };
+		F4B6F7E418FEDECA000229F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F7E218FEDECA000229F8 /* InfoPlist.strings */; };
+		F4B6F7E618FEDECA000229F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F7E518FEDECA000229F8 /* main.m */; };
+		F4B6F7EA18FEDECA000229F8 /* SCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F7E918FEDECA000229F8 /* SCSAppDelegate.m */; };
+		F4B6F7EC18FEDECA000229F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F7EB18FEDECA000229F8 /* Images.xcassets */; };
+		F4B6F7F318FEDECA000229F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7F218FEDECA000229F8 /* XCTest.framework */; };
+		F4B6F7F418FEDECA000229F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7D918FEDECA000229F8 /* Foundation.framework */; };
+		F4B6F7F518FEDECA000229F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7DD18FEDECA000229F8 /* UIKit.framework */; };
+		F4B6F7FD18FEDECA000229F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F7FB18FEDECA000229F8 /* InfoPlist.strings */; };
+		F4B6F7FF18FEDECA000229F8 /* Starcraft2SoundboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F7FE18FEDECA000229F8 /* Starcraft2SoundboardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4B6F7F618FEDECA000229F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4B6F7CE18FEDECA000229F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B6F7D518FEDECA000229F8;
+			remoteInfo = Starcraft2Soundboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4B6F7D618FEDECA000229F8 /* Starcraft2Soundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starcraft2Soundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B6F7D918FEDECA000229F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4B6F7DB18FEDECA000229F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4B6F7DD18FEDECA000229F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4B6F7E118FEDECA000229F8 /* Starcraft2Soundboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Starcraft2Soundboard-Info.plist"; sourceTree = "<group>"; };
+		F4B6F7E318FEDECA000229F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4B6F7E518FEDECA000229F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4B6F7E718FEDECA000229F8 /* Starcraft2Soundboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Starcraft2Soundboard-Prefix.pch"; sourceTree = "<group>"; };
+		F4B6F7E818FEDECA000229F8 /* SCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSAppDelegate.h; sourceTree = "<group>"; };
+		F4B6F7E918FEDECA000229F8 /* SCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSAppDelegate.m; sourceTree = "<group>"; };
+		F4B6F7EB18FEDECA000229F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4B6F7F118FEDECA000229F8 /* Starcraft2SoundboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Starcraft2SoundboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B6F7F218FEDECA000229F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F4B6F7FA18FEDECA000229F8 /* Starcraft2SoundboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Starcraft2SoundboardTests-Info.plist"; sourceTree = "<group>"; };
+		F4B6F7FC18FEDECA000229F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4B6F7FE18FEDECA000229F8 /* Starcraft2SoundboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starcraft2SoundboardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B6F7D318FEDECA000229F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7DC18FEDECA000229F8 /* CoreGraphics.framework in Frameworks */,
+				F4B6F7DE18FEDECA000229F8 /* UIKit.framework in Frameworks */,
+				F4B6F7DA18FEDECA000229F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B6F7EE18FEDECA000229F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7F318FEDECA000229F8 /* XCTest.framework in Frameworks */,
+				F4B6F7F518FEDECA000229F8 /* UIKit.framework in Frameworks */,
+				F4B6F7F418FEDECA000229F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4B6F7CD18FEDECA000229F8 = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7DF18FEDECA000229F8 /* Starcraft2Soundboard */,
+				F4B6F7F818FEDECA000229F8 /* Starcraft2SoundboardTests */,
+				F4B6F7D818FEDECA000229F8 /* Frameworks */,
+				F4B6F7D718FEDECA000229F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B6F7D718FEDECA000229F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7D618FEDECA000229F8 /* Starcraft2Soundboard.app */,
+				F4B6F7F118FEDECA000229F8 /* Starcraft2SoundboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B6F7D818FEDECA000229F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7D918FEDECA000229F8 /* Foundation.framework */,
+				F4B6F7DB18FEDECA000229F8 /* CoreGraphics.framework */,
+				F4B6F7DD18FEDECA000229F8 /* UIKit.framework */,
+				F4B6F7F218FEDECA000229F8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B6F7DF18FEDECA000229F8 /* Starcraft2Soundboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7E818FEDECA000229F8 /* SCSAppDelegate.h */,
+				F4B6F7E918FEDECA000229F8 /* SCSAppDelegate.m */,
+				F4B6F7EB18FEDECA000229F8 /* Images.xcassets */,
+				F4B6F7E018FEDECA000229F8 /* Supporting Files */,
+			);
+			path = Starcraft2Soundboard;
+			sourceTree = "<group>";
+		};
+		F4B6F7E018FEDECA000229F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7E118FEDECA000229F8 /* Starcraft2Soundboard-Info.plist */,
+				F4B6F7E218FEDECA000229F8 /* InfoPlist.strings */,
+				F4B6F7E518FEDECA000229F8 /* main.m */,
+				F4B6F7E718FEDECA000229F8 /* Starcraft2Soundboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B6F7F818FEDECA000229F8 /* Starcraft2SoundboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7FE18FEDECA000229F8 /* Starcraft2SoundboardTests.m */,
+				F4B6F7F918FEDECA000229F8 /* Supporting Files */,
+			);
+			path = Starcraft2SoundboardTests;
+			sourceTree = "<group>";
+		};
+		F4B6F7F918FEDECA000229F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B6F7FA18FEDECA000229F8 /* Starcraft2SoundboardTests-Info.plist */,
+				F4B6F7FB18FEDECA000229F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4B6F7D518FEDECA000229F8 /* Starcraft2Soundboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B6F80218FEDECA000229F8 /* Build configuration list for PBXNativeTarget "Starcraft2Soundboard" */;
+			buildPhases = (
+				F4B6F7D218FEDECA000229F8 /* Sources */,
+				F4B6F7D318FEDECA000229F8 /* Frameworks */,
+				F4B6F7D418FEDECA000229F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starcraft2Soundboard;
+			productName = Starcraft2Soundboard;
+			productReference = F4B6F7D618FEDECA000229F8 /* Starcraft2Soundboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4B6F7F018FEDECA000229F8 /* Starcraft2SoundboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B6F80518FEDECA000229F8 /* Build configuration list for PBXNativeTarget "Starcraft2SoundboardTests" */;
+			buildPhases = (
+				F4B6F7ED18FEDECA000229F8 /* Sources */,
+				F4B6F7EE18FEDECA000229F8 /* Frameworks */,
+				F4B6F7EF18FEDECA000229F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B6F7F718FEDECA000229F8 /* PBXTargetDependency */,
+			);
+			name = Starcraft2SoundboardTests;
+			productName = Starcraft2SoundboardTests;
+			productReference = F4B6F7F118FEDECA000229F8 /* Starcraft2SoundboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B6F7CE18FEDECA000229F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AppWerk;
+				TargetAttributes = {
+					F4B6F7F018FEDECA000229F8 = {
+						TestTargetID = F4B6F7D518FEDECA000229F8;
+					};
+				};
+			};
+			buildConfigurationList = F4B6F7D118FEDECA000229F8 /* Build configuration list for PBXProject "Starcraft2Soundboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F4B6F7CD18FEDECA000229F8;
+			productRefGroup = F4B6F7D718FEDECA000229F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B6F7D518FEDECA000229F8 /* Starcraft2Soundboard */,
+				F4B6F7F018FEDECA000229F8 /* Starcraft2SoundboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B6F7D418FEDECA000229F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7E418FEDECA000229F8 /* InfoPlist.strings in Resources */,
+				F4B6F7EC18FEDECA000229F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B6F7EF18FEDECA000229F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7FD18FEDECA000229F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B6F7D218FEDECA000229F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7EA18FEDECA000229F8 /* SCSAppDelegate.m in Sources */,
+				F4B6F7E618FEDECA000229F8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B6F7ED18FEDECA000229F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B6F7FF18FEDECA000229F8 /* Starcraft2SoundboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4B6F7F718FEDECA000229F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B6F7D518FEDECA000229F8 /* Starcraft2Soundboard */;
+			targetProxy = F4B6F7F618FEDECA000229F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4B6F7E218FEDECA000229F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B6F7E318FEDECA000229F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4B6F7FB18FEDECA000229F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B6F7FC18FEDECA000229F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B6F80018FEDECA000229F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4B6F80118FEDECA000229F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B6F80318FEDECA000229F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
+				INFOPLIST_FILE = "Starcraft2Soundboard/Starcraft2Soundboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4B6F80418FEDECA000229F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
+				INFOPLIST_FILE = "Starcraft2Soundboard/Starcraft2Soundboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F4B6F80618FEDECA000229F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Starcraft2Soundboard.app/Starcraft2Soundboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Starcraft2SoundboardTests/Starcraft2SoundboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F4B6F80718FEDECA000229F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Starcraft2Soundboard.app/Starcraft2Soundboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
+				INFOPLIST_FILE = "Starcraft2SoundboardTests/Starcraft2SoundboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B6F7D118FEDECA000229F8 /* Build configuration list for PBXProject "Starcraft2Soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B6F80018FEDECA000229F8 /* Debug */,
+				F4B6F80118FEDECA000229F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B6F80218FEDECA000229F8 /* Build configuration list for PBXNativeTarget "Starcraft2Soundboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B6F80318FEDECA000229F8 /* Debug */,
+				F4B6F80418FEDECA000229F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4B6F80518FEDECA000229F8 /* Build configuration list for PBXNativeTarget "Starcraft2SoundboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B6F80618FEDECA000229F8 /* Debug */,
+				F4B6F80718FEDECA000229F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B6F7CE18FEDECA000229F8 /* Project object */;
+}
