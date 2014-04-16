@@ -19,6 +19,10 @@
 		F4B6F7F518FEDECA000229F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B6F7DD18FEDECA000229F8 /* UIKit.framework */; };
 		F4B6F7FD18FEDECA000229F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F7FB18FEDECA000229F8 /* InfoPlist.strings */; };
 		F4B6F7FF18FEDECA000229F8 /* Starcraft2SoundboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F7FE18FEDECA000229F8 /* Starcraft2SoundboardTests.m */; };
+		F4B6F80918FEDEF1000229F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F80818FEDEF1000229F8 /* Main.storyboard */; };
+		F4B6F80F18FEE7A2000229F8 /* SCSQuotesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F80E18FEE7A2000229F8 /* SCSQuotesTableViewController.m */; };
+		F4B6F85F18FEEBD2000229F8 /* SCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F85E18FEEBD2000229F8 /* SCSViewController.m */; };
+		F4B6F86118FEECF1000229F8 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F86018FEECF1000229F8 /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		F4B6F7FA18FEDECA000229F8 /* Starcraft2SoundboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Starcraft2SoundboardTests-Info.plist"; sourceTree = "<group>"; };
 		F4B6F7FC18FEDECA000229F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F4B6F7FE18FEDECA000229F8 /* Starcraft2SoundboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Starcraft2SoundboardTests.m; sourceTree = "<group>"; };
+		F4B6F80818FEDEF1000229F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F4B6F80D18FEE7A2000229F8 /* SCSQuotesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSQuotesTableViewController.h; sourceTree = "<group>"; };
+		F4B6F80E18FEE7A2000229F8 /* SCSQuotesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSQuotesTableViewController.m; sourceTree = "<group>"; };
+		F4B6F85D18FEEBD2000229F8 /* SCSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSViewController.h; sourceTree = "<group>"; };
+		F4B6F85E18FEEBD2000229F8 /* SCSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSViewController.m; sourceTree = "<group>"; };
+		F4B6F86018FEECF1000229F8 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +117,16 @@
 		F4B6F7DF18FEDECA000229F8 /* Starcraft2Soundboard */ = {
 			isa = PBXGroup;
 			children = (
+				F4B6F86018FEECF1000229F8 /* Sounds */,
 				F4B6F7E818FEDECA000229F8 /* SCSAppDelegate.h */,
 				F4B6F7E918FEDECA000229F8 /* SCSAppDelegate.m */,
 				F4B6F7EB18FEDECA000229F8 /* Images.xcassets */,
 				F4B6F7E018FEDECA000229F8 /* Supporting Files */,
+				F4B6F80818FEDEF1000229F8 /* Main.storyboard */,
+				F4B6F80D18FEE7A2000229F8 /* SCSQuotesTableViewController.h */,
+				F4B6F80E18FEE7A2000229F8 /* SCSQuotesTableViewController.m */,
+				F4B6F85D18FEEBD2000229F8 /* SCSViewController.h */,
+				F4B6F85E18FEEBD2000229F8 /* SCSViewController.m */,
 			);
 			path = Starcraft2Soundboard;
 			sourceTree = "<group>";
@@ -192,6 +208,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = AppWerk;
 				TargetAttributes = {
+					F4B6F7D518FEDECA000229F8 = {
+						DevelopmentTeam = H8D99DH292;
+					};
 					F4B6F7F018FEDECA000229F8 = {
 						TestTargetID = F4B6F7D518FEDECA000229F8;
 					};
@@ -220,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B6F80918FEDEF1000229F8 /* Main.storyboard in Resources */,
 				F4B6F7E418FEDECA000229F8 /* InfoPlist.strings in Resources */,
+				F4B6F86118FEECF1000229F8 /* Sounds in Resources */,
 				F4B6F7EC18FEDECA000229F8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +263,8 @@
 			files = (
 				F4B6F7EA18FEDECA000229F8 /* SCSAppDelegate.m in Sources */,
 				F4B6F7E618FEDECA000229F8 /* main.m in Sources */,
+				F4B6F85F18FEEBD2000229F8 /* SCSViewController.m in Sources */,
+				F4B6F80F18FEE7A2000229F8 /* SCSQuotesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,9 +381,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
 				INFOPLIST_FILE = "Starcraft2Soundboard/Starcraft2Soundboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -371,9 +396,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Starcraft2Soundboard/Starcraft2Soundboard-Prefix.pch";
 				INFOPLIST_FILE = "Starcraft2Soundboard/Starcraft2Soundboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
