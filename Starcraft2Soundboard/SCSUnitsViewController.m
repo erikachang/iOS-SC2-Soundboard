@@ -70,8 +70,15 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Unit" forIndexPath:indexPath];
+    
     UIImageView *imageView = (UIImageView *)[cell viewWithTag:1];
     imageView.image = [UIImage imageNamed:[_units objectAtIndex:indexPath.row]];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:2];
+    label.text = [_units objectAtIndex:indexPath.row];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont fontWithName:@"Starcraft" size:12.0f];
+    
     return cell;
 }
 

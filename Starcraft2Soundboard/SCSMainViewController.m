@@ -33,6 +33,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self navigationController].navigationBarHidden = YES;
+    
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [UIView animateWithDuration:2.0f delay:0.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse animations:^(void) {
+        [self btnTerran].alpha = 0;
+    } completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning
