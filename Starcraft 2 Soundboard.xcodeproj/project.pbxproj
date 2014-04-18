@@ -25,6 +25,10 @@
 		F4B6F864190081ED000229F8 /* SCSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F863190081ED000229F8 /* SCSMainViewController.m */; };
 		F4B6F86A19008646000229F8 /* SCSUnitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B6F86919008646000229F8 /* SCSUnitsViewController.m */; };
 		F4B6F86C19009AAC000229F8 /* Starcraft-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4B6F86B19009AAC000229F8 /* Starcraft-Normal.ttf */; };
+		F4F1681F1901C3BA00B304D6 /* Children of Aiur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F4F1681E1901C3BA00B304D6 /* Children of Aiur.mp3 */; };
+		F4F168211901C4E100B304D6 /* Protoss.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F4F168201901C4E100B304D6 /* Protoss.m4a */; };
+		F4F168231901C5A000B304D6 /* Terran.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F4F168221901C5A000B304D6 /* Terran.m4a */; };
+		F4F168251901C5A600B304D6 /* Zerg.m4a in Resources */ = {isa = PBXBuildFile; fileRef = F4F168241901C5A600B304D6 /* Zerg.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		F4B6F86819008646000229F8 /* SCSUnitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSUnitsViewController.h; sourceTree = "<group>"; };
 		F4B6F86919008646000229F8 /* SCSUnitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSUnitsViewController.m; sourceTree = "<group>"; };
 		F4B6F86B19009AAC000229F8 /* Starcraft-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Starcraft-Normal.ttf"; sourceTree = "<group>"; };
+		F4F1681E1901C3BA00B304D6 /* Children of Aiur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Children of Aiur.mp3"; sourceTree = "<group>"; };
+		F4F168201901C4E100B304D6 /* Protoss.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Protoss.m4a; sourceTree = "<group>"; };
+		F4F168221901C5A000B304D6 /* Terran.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Terran.m4a; sourceTree = "<group>"; };
+		F4F168241901C5A600B304D6 /* Zerg.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zerg.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,10 @@
 		F4B6F7DF18FEDECA000229F8 /* Starcraft2Soundboard */ = {
 			isa = PBXGroup;
 			children = (
+				F4F168241901C5A600B304D6 /* Zerg.m4a */,
+				F4F168221901C5A000B304D6 /* Terran.m4a */,
+				F4F168201901C4E100B304D6 /* Protoss.m4a */,
+				F4F1681E1901C3BA00B304D6 /* Children of Aiur.mp3 */,
 				F4B6F86018FEECF1000229F8 /* Sounds */,
 				F4B6F7E818FEDECA000229F8 /* SCSAppDelegate.h */,
 				F4B6F7E918FEDECA000229F8 /* SCSAppDelegate.m */,
@@ -247,9 +259,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F168231901C5A000B304D6 /* Terran.m4a in Resources */,
 				F4B6F80918FEDEF1000229F8 /* Main.storyboard in Resources */,
 				F4B6F7E418FEDECA000229F8 /* InfoPlist.strings in Resources */,
+				F4F168251901C5A600B304D6 /* Zerg.m4a in Resources */,
+				F4F1681F1901C3BA00B304D6 /* Children of Aiur.mp3 in Resources */,
 				F4B6F86118FEECF1000229F8 /* Sounds in Resources */,
+				F4F168211901C4E100B304D6 /* Protoss.m4a in Resources */,
 				F4B6F86C19009AAC000229F8 /* Starcraft-Normal.ttf in Resources */,
 				F4B6F7EC18FEDECA000229F8 /* Images.xcassets in Resources */,
 			);
@@ -475,6 +491,7 @@
 				F4B6F80418FEDECA000229F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4B6F80518FEDECA000229F8 /* Build configuration list for PBXNativeTarget "Starcraft 2 SoundboardTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +500,7 @@
 				F4B6F80718FEDECA000229F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

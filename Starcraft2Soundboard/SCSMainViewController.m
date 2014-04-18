@@ -34,7 +34,24 @@
     // Do any additional setup after loading the view.
     [self navigationController].navigationBarHidden = YES;
     
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/Children of Aiur.mp3", [[NSBundle mainBundle] resourcePath]]];
+	
+	NSError *error;
+	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+	audioPlayer.numberOfLoops = 0;
+	
+	if (audioPlayer == nil)
+		NSLog(@"%@", [error description]);
+	else
+		[audioPlayer play];
+    
+    [audioPlayer setNumberOfLoops:-1];
+}
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (audioPlayer)
+        [audioPlayer play];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,14 +73,23 @@
         case 0: segueIdentifier = @"Terran";
             break;
         case 1: segueIdentifier = @"Protoss";
+            
             break;
         case 2: segueIdentifier = @"Zerg";
         default:
             break;
     }
     
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@.m4a", [[NSBundle mainBundle] resourcePath], segueIdentifier]];
+    
+    NSError *error;
+    soundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    
     SCSUnitsViewController *nextController = (SCSUnitsViewController *)[segue destinationViewController];
     nextController.race = segueIdentifier;
+    
+    [audioPlayer pause];
+    [soundPlayer play];
 }
 
 

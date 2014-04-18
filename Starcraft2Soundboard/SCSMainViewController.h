@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface SCSMainViewController : UIViewController
+{
+    AVAudioPlayer *audioPlayer, *soundPlayer;
+}
+
 @property (weak, nonatomic) IBOutlet UIButton *btnProtoss;
 @property (weak, nonatomic) IBOutlet UIButton *btnZerg;
 @property (weak, nonatomic) IBOutlet UIButton *btnTerran;
