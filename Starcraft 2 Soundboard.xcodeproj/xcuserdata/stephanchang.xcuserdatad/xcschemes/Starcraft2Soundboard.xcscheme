@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4B6F7D518FEDECA000229F8"
-               BuildableName = "Starcraft2Soundboard.app"
+               BuildableName = "Starcraft 2 Soundboard.app"
                BlueprintName = "Starcraft 2 Soundboard"
                ReferencedContainer = "container:Starcraft 2 Soundboard.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F4B6F7F018FEDECA000229F8"
-               BuildableName = "Starcraft2SoundboardTests.xctest"
+               BuildableName = "Starcraft 2 SoundboardTests.xctest"
                BlueprintName = "Starcraft 2 SoundboardTests"
                ReferencedContainer = "container:Starcraft 2 Soundboard.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4B6F7D518FEDECA000229F8"
-            BuildableName = "Starcraft2Soundboard.app"
+            BuildableName = "Starcraft 2 Soundboard.app"
             BlueprintName = "Starcraft 2 Soundboard"
             ReferencedContainer = "container:Starcraft 2 Soundboard.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4B6F7D518FEDECA000229F8"
-            BuildableName = "Starcraft2Soundboard.app"
+            BuildableName = "Starcraft 2 Soundboard.app"
             BlueprintName = "Starcraft 2 Soundboard"
             ReferencedContainer = "container:Starcraft 2 Soundboard.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F4B6F7D518FEDECA000229F8"
-            BuildableName = "Starcraft2Soundboard.app"
+            BuildableName = "Starcraft 2 Soundboard.app"
             BlueprintName = "Starcraft 2 Soundboard"
             ReferencedContainer = "container:Starcraft 2 Soundboard.xcodeproj">
          </BuildableReference>
