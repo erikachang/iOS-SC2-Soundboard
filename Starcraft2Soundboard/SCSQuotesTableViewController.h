@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface SCSQuotesTableViewController : UITableViewController
+@interface SCSQuotesTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     AVAudioPlayer *audioPlayer;
+    NSArray *_quotes;
 }
+@property (weak, nonatomic) IBOutlet UITableView *tblQuotes;
+
+@property NSString *unitName;
 @end

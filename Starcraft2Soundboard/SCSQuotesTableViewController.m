@@ -14,23 +14,19 @@
 
 @implementation SCSQuotesTableViewController
 
+- (void)goBack
+{
+    [[self navigationController] popViewControllerAnimated:YES];
+}
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+//    self = [super initWithStyle:style];
+    self = [super init];
     if (self) {
         // Custom initialization
     }
     return self;
-}
-
-- (NSArray *)dataSource
-{
-    NSLog(@"Retrieving directory contents");
-    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
-    NSString * documentsPath = [resourcePath stringByAppendingPathComponent:@"Sounds/Firebat"];
-    NSError * error;
-    NSArray * directoryContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsPath error:&error];
-    return directoryContents;
 }
 
 - (void)viewDidLoad
@@ -42,6 +38,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    NSString * resourcePath = [[NSBundle mainBundle] resourcePath];
+    NSString * documentsPath = [resourcePath stringByAppendingPathComponent:[self unitName]];
+    NSError * error;
+    NSArray * directoryContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:documentsPath error:&error];
+    _quotes = directoryContents;
+    
+    [self.tblQuotes setBackgroundColor:[UIColor clearColor]];
+    
+    UISwipeGestureRecognizer *swipeRecon = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goBack)];
+    [swipeRecon setDirection:UISwipeGestureRecognizerDirectionRight];
+    
+    [self.view addGestureRecognizer:swipeRecon];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,8 +70,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"Showing %d results", [self dataSource].count);
-    return [self dataSource].count;
+    return _quotes.count;
 }
 
 
@@ -72,7 +80,14 @@
     
     // Configure the cell...
     
-    cell.textLabel.text = [[self dataSource] objectAtIndex:indexPath.row];
+    NSString *soundName = [_quotes objectAtIndex:indexPath.row];
+
+    cell.textLabel.text = [soundName substringToIndex:(soundName.length-4)];
+    
+    // Styling
+    cell.textLabel.font = [UIFont fontWithName:@"Starcraft" size:14.0f];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
@@ -81,7 +96,7 @@
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/Sounds/Firebat/%@", [[NSBundle mainBundle] resourcePath], cell.textLabel.text]];
+    NSURL *url = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@/%@.mp3", [[NSBundle mainBundle] resourcePath], self.unitName, cell.textLabel.text]];
 	
 	NSError *error;
 	audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
@@ -92,7 +107,6 @@
 	else
 		[audioPlayer play];
 }
-
 
 /*
 // Override to support conditional editing of the table view.
